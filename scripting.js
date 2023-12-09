@@ -29,11 +29,11 @@ let populateUsers = (obj) => {
         displayName.classList.add("displayname");
 
         const username = document.createElement("p");
-        username.textContent = `@?{user.username}`;
+        username.textContent = `Username: ${user.username}`;
         username.classList.add("info");
 
         const email = document.createElement("p");
-        email.textContent = `Email : ${user.email}`;
+        email.textContent = `Email: ${user.email}`;
         email.classList.add("info");
 
         const address = document.createElement("p");
@@ -51,15 +51,6 @@ let populateUsers = (obj) => {
         const company = document.createElement("p");
         company.textContent = `Company: ${user.company.name} Catchphrase: ${user.company.catchPhrase} bs: ${user.company.bs}`;
 
-        // nameContainer.appendChild(displayName);
-        // nameContainer.appendChild(username);
-        // nameContainer.appendChild(email);
-        // nameContainer.appendChild(address);
-        // nameContainer.appendChild(phone);
-        // nameContainer.appendChild(website);
-        // nameContainer.appendChild(company);
-        // section.appendChild(nameContainer);
-
         section.appendChild(displayName);
         section.appendChild(username);
         section.appendChild(email);
@@ -68,18 +59,6 @@ let populateUsers = (obj) => {
         section.appendChild(website);
         section.appendChild(company);
     }
-
-    // const getPosts = () => {
-    //     let posts = fetch(`https://jsonplaceholder.typicode.com/posts`)
-    //     .then (response => response.json)
-    //     .then(post => populatePosts(post))
-    // }
-
-    // const populatePosts = (obj) => {
-    //     const section = document.getElementById('postSection');
-    //     const posts = obj;
-    //     posts.map()
-    // }
 }
 
 
